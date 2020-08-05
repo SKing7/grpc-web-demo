@@ -28,6 +28,7 @@ docker run -d -v "$(pwd)"/envoy.yaml:/etc/envoy/envoy.yaml:ro \
 ### 启动server和client
 
 ```shell
+yarn install
 cd server && node server.js
 cd ..
 npx webpack-cli index.js
